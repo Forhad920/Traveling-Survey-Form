@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <h1 id="title">Traveling Survey Form</h1>
+            <p id="description">Tell us about your traveling experiencess</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <br>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label id="age-label" for="age"><span>Age</span>(optional)</label>
+                <input type="number" name="age" id="age" min="10" max="99" placeholder="Age" required>
+                <p class="interest">What kind of destination do you like?</p>
+                <select name="inerest" id="dropdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="beach">Beach</option>
+                    <option value="historical place">Historical Place</option>
+                    <option value="forest">Forest</option>
+                    <option value="perferNo">Perfer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="partner">
+                <p class="family">Do you travel with your family?</p>
+                <label>
+                    <input type="radio" value="absolutely" name="partner" id="partner" checked>Absolutely</label>
+                <label>
+                    <input type="radio" value="sometimes" name="partner" id="partner">Sometimes</label>
+                <label>
+                    <input type="radio" value="never" name="partner" id="partner">Never</label>
+            </div>
+            <div class="favorite">
+                <p class="like">What do you like about traveling?</p>
+                <select name="favorite" id="dropdown">
+                    <option disabled selected value>Select an option</option>
+                    <option value="cultures">New Cultures</option>
+                    <option value="foods">New cuisines</option>
+                    <option value="perferNot">Prefer not to say</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="visited">
+                <p>Which country have you already visited?</p>
+                <label><input type="checkbox" name="visited" value="brazil" id="visited">Brazil</label>
+                <label><input type="checkbox" name="visited" value="australia" id="visited">Australia</label>
+                <label><input type="checkbox" name="visited" value="germany" id="visited">Germany</label>
+                <label><input type="checkbox" name="visited" value="america" id="visited">America</label>
+                <label><input type="checkbox" name="visited" value="ireland" id="visited">Ireland</label>
+                <label><input type="checkbox" name="visited" value="mexico" id="visited">Mexico</label>
+                <label><input type="checkbox" name="visited" value="japan" id="visited">Japan</label>
+                <label><input type="checkbox" name="visited" value="china" id="visited">China</label>
+                <label><input type="checkbox" name="visited" value="england" id="visited">England</label>
+                <label><input type="checkbox" name="visited" value="France" id="visited">France</label>
+            </div>
+            <div class="textarea">
+                <p>Anything else you want to say?</p>
+                <textarea name="textarea" id="textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

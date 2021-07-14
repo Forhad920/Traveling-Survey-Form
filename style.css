@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #f4f4f9;
+  line-height: 1.4;
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(25, 25, 35, 0.5),
+      rgba(25, 25, 35, 0.5)
+    ),
+    url(./pexels-andrei-tanase-1271619.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#title {
+  color: #f4f4f9;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+#description {
+  font-style: italic;
+  color: #d5d5e2;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1.7rem;
+}
+#survey-form {
+  background: #191923;
+  width: 800px;
+  height: 1400px;
+  border-radius: 10px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+.form-group {
+  margin-left: 50px;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.form-group input {
+  display: block;
+  width: 700px;
+  padding: 0.375rem 0.75rem;
+  height: 2.375rem;
+  border-radius: 5px;
+  color: #495057;
+  font-size: 18px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+}
+#email-label {
+  margin-top: 20px;
+}
+#age-label {
+  margin-top: 20px;
+}
+#age-label {
+  font-size: 1rem;
+}
+#age-label span {
+  font-size: 20px;
+}
+.interest {
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+#dropdown {
+  display: block;
+  width: 700px;
+  padding: 0.375rem 0.75rem;
+  height: 2.375rem;
+  border-radius: 5px;
+  color: #495057;
+  font-size: 18px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+}
+.partner {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#partner {
+  margin-right: 15px;
+}
+.partner label {
+  font-size: 20px;
+}
+.family {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.favorite {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.like {
+  font-size: 1.4rem;
+}
+.visited {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.visited p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+#visited {
+  margin-right: 15px;
+}
+.visited label {
+  font-size: 20px;
+}
+.textarea {
+  margin-left: 50px;
+}
+.textarea p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+#textarea {
+  display: block;
+  width: 700px;
+  padding: 0.375rem 0.75rem;
+  height: 200px;
+  border-radius: 5px;
+  color: #495057;
+  font-size: 18px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  resize: vertical;
+}
+.button {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#submit {
+  display: block;
+  width: 700px;
+  padding: 0.75rem;
+  background: #eecc00;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+}
+@media (max-width: 806px) {
+  #survey-form {
+    width: 730px;
+  }
+  .form-group input {
+    width: 670px;
+  }
+  #dropdown {
+    width: 670px;
+  }
+  #textarea {
+    width: 670px;
+  }
+  #submit {
+    width: 670px;
+  }
+}
+@media (max-width: 780px) {
+  #survey-form {
+    width: 650px;
+  }
+  .form-group input {
+    width: 580px;
+  }
+  #dropdown {
+    width: 580px;
+  }
+  #textarea {
+    width: 580px;
+  }
+  #submit {
+    width: 580px;
+  }
+}
+@media (max-width: 720px) {
+  #survey-form {
+    width: 600px;
+  }
+  .form-group input {
+    width: 490px;
+  }
+  #dropdown {
+    width: 490px;
+  }
+  #textarea {
+    width: 490px;
+  }
+  #submit {
+    width: 490px;
+  }
+}
+@media (max-width: 670px) {
+  #survey-form {
+    width: 550px;
+  }
+}
+@media (max-width: 630px) {
+  #survey-form {
+    width: 480px;
+  }
+  .form-group input {
+    width: 390px;
+  }
+  #dropdown {
+    width: 390px;
+  }
+  #textarea {
+    width: 390px;
+  }
+  #submit {
+    width: 390px;
+  }
+}
